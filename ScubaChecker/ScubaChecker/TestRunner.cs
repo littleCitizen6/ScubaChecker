@@ -11,7 +11,7 @@ namespace ScubaChecker
     {
         public T[] Deserialize(Stream stream)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            XmlSerializer serializer = new XmlSerializer(typeof(T[]));
             return (T[])serializer.Deserialize(stream);
         }
     }
